@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Quick update script for Claude configuration
+# This is a simple wrapper around the Dropbox sync script
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SYNC_SCRIPT="$SCRIPT_DIR/sync-claude-dropbox.sh"
+
+if [[ ! -f "$SYNC_SCRIPT" ]]; then
+    echo "Error: sync-claude-dropbox.sh not found in $SCRIPT_DIR"
+    exit 1
+fi
+
+echo "🔄 Updating Claude configuration via Dropbox..."
+"$SYNC_SCRIPT" "$@"
+
+if [[ $? -eq 0 ]]; then
+    echo "✅ Claude configuration updated successfully!"
+    echo "💡 Your changes are now synced to Dropbox and available to Claude Code"
+else
+    echo "❌ Update failed. Check the output above for details."
+    exit 1
+fi

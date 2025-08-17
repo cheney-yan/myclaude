@@ -1,0 +1,56 @@
+{
+  "autoUpdates": true,
+  "verbose": false,
+  "theme": "dark",
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./**/secrets/**)",
+      "Read(./.aws/**)",
+      "Read(./.ssh/**)",
+      "Read(./private/**)",
+      "Read(./**/private/**)",
+      "Write(./.env)",
+      "Write(./.env.*)",
+      "Write(./secrets/**)",
+      "Write(./**/secrets/**)",
+      "Write(./.aws/**)",
+      "Write(./.ssh/**)",
+      "Write(./private/**)",
+      "Write(./**/private/**)"
+    ]
+  },
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1"
+  },
+  "allowedTools": [
+    "Bash",
+    "Read",
+    "Write",
+    "Edit",
+    "MultiEdit",
+    "Glob",
+    "Grep",
+    "LS",
+    "Task",
+    "TodoWrite",
+    "ExitPlanMode",
+    "WebFetch",
+    "WebSearch",
+    "NotebookEdit",
+    "BashOutput",
+    "KillBash"
+  ],
+  "disallowedTools": [],
+  "maxTokens": null,
+  "temperature": null,
+  "outputStyle": "explanatory",
+  "planMode": false,
+  "memoryEnabled": true,
+  "contextWindow": "auto",
+  "mcpServers": {
+    
+  }
+}
