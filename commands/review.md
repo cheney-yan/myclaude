@@ -1,31 +1,44 @@
-## Usage
-`/project:review.md <CODE_SCOPE>`
+# Code Review
 
-## Context
-- Code scope for review: $ARGUMENTS
-- Target files will be referenced using @ file syntax.
-- Project coding standards and conventions will be considered.
+I'll review your code for potential issues.
 
-## Your Role
-You are the Code Review Coordinator directing four review specialists:
-1. **Quality Auditor** – examines code quality, readability, and maintainability.
-2. **Security Analyst** – identifies vulnerabilities and security best practices.
-3. **Performance Reviewer** – evaluates efficiency and optimization opportunities.
-4. **Architecture Assessor** – validates design patterns and structural decisions.
+Let me create a checkpoint before detailed analysis:
+```bash
+git add -A  
+git commit -m "Pre-review checkpoint" || echo "No changes to commit"
+```
 
-## Process
-1. **Code Examination**: Systematically analyze target code sections and dependencies.
-2. **Multi-dimensional Review**:
-   - Quality Auditor: Assess naming, structure, complexity, and documentation
-   - Security Analyst: Scan for injection risks, auth issues, and data exposure
-   - Performance Reviewer: Identify bottlenecks, memory leaks, and optimization points
-   - Architecture Assessor: Evaluate SOLID principles, patterns, and scalability
-3. **Synthesis**: Consolidate findings into prioritized actionable feedback.
-4. **Validation**: Ensure recommendations are practical and aligned with project goals.
+I'll use specialized sub-agents for comprehensive analysis:
+- **Security sub-agent**: Credential exposure, input validation, vulnerabilities
+- **Performance sub-agent**: Bottlenecks, memory issues, optimization opportunities  
+- **Quality sub-agent**: Code complexity, maintainability, best practices
+- **Architecture sub-agent**: Layer separation, dependency direction, scalability patterns
 
-## Output Format
-1. **Review Summary** – high-level assessment with priority classification.
-2. **Detailed Findings** – specific issues with code examples and explanations.
-3. **Improvement Recommendations** – concrete refactoring suggestions with code samples.
-4. **Action Plan** – prioritized tasks with effort estimates and impact assessment.
-5. **Next Actions** – follow-up reviews and monitoring requirements.
+I'll examine files using the Read and Grep tools to analyze:
+1. **Security Issues** - credential exposure, input validation
+2. **Logic Problems** - error handling, edge cases  
+3. **Performance Concerns** - inefficient patterns, bottlenecks
+4. **Code Quality** - complexity, maintainability
+
+When I find multiple issues, I'll create a todo list to address them systematically.
+
+For each issue, I'll:
+- Show exact location with file references
+- Explain the problem and potential impact
+- Provide specific remediation steps
+- Prioritize by severity and effort
+
+After review, I'll ask: "Create GitHub issues for critical findings?"
+- Yes: I'll create prioritized issues with detailed descriptions
+- Todos only: I'll maintain local tracking for resolution
+- Summary: I'll provide actionable report
+
+**Important**: I will NEVER:
+- Add "Co-authored-by" or any Claude signatures to commits
+- Add "Created by Claude" or any AI attribution to issues
+- Include "Generated with Claude Code" in any output
+- Modify git config or repository settings
+- Add any AI/assistant signatures or watermarks
+- Use emojis in commits, PRs, issues, or git-related content
+
+This focuses on real problems that impact your application's reliability and maintainability.
