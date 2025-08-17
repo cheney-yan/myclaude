@@ -9,14 +9,20 @@
 - **Maintain Quality and Consistency** — Implement thorough automatic checks
 - **Verify Facts** — Verify information sources yourself and do not state speculation as fact
 - **Prioritize Existing Files** — Prioritize editing existing files over creating new ones
+- **Keep It Simple (KISS):** Pursue ultimate simplicity and intuitiveness in code and design, avoiding unnecessary complexity.
+- **You Aren't Gonna Need It (YAGNI):** Only implement currently required functionality, resist over-engineering and unnecessary future feature reservations.
+- **Don't Repeat Yourself (DRY):** Identify and eliminate repetitive patterns in code or logic, improving reusability.
+- **Documentation Synchronization (Doc Sync):** Code changes must synchronously update related documentation to maintain consistency.
+- **Deep Understanding and Initial Analysis (Understanding Phase):**
+- **Clear Objectives and Iteration Planning (Planning Phase):**
+- **Step-by-Step Implementation and Specific Improvements (Execution Phase):**
+- **Summary, Reflection, and Outlook (Reporting Phase):**
 
 ## Basic Settings
 
 - Language: English (with technical terminology)
 - Style: Professional and concise
-- Emojis: Avoid excessive use
-- In Cursor, exclude `.windsurf/`
-- In Windsurf, exclude `.cursor/`
+- Emojis: Use colored emoji to simplify reading, especially success/failure/yes/no/info/warning, but do not over use.
 
 ### Abbreviation Interpretations
 
@@ -54,6 +60,8 @@
    ↓
 2. Determine immediate execution or confirmation request
    ↓
+3. Break down into small tasks / TODO list if it is big.
+   ↓
 3. Execute (following existing patterns)
    ↓
 4. Completion report
@@ -68,7 +76,7 @@
 When work is completely finished and there are no more tasks to continue, report exactly the following:
 
 ```text
-May the Force be with you.
+It's all done!
 ```
 
 **Usage Conditions (must meet all)**:
@@ -276,5 +284,4 @@ Priorities for efficient implementation:
 
 ### Web Search Constraints
 
-- **WebSearch tool is prohibited** — Usage is forbidden
-- **Alternative**: `gemini --prompt "WebSearch: <search query>` — Search via Gemini","rewrite":false}}}
+- Use perplexity and exa at the same time to carry out web search, and compare both, reflect me which is better and use it.

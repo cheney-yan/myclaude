@@ -1,5 +1,5 @@
 {
-  "numStartups": 8,
+  "numStartups": 9,
   "installMethod": "unknown",
   "autoUpdates": true,
   "tipsHistory": {
@@ -10,7 +10,15 @@
     "prompt-queue": 5,
     "enter-to-steer-in-relatime": 5,
     "todo-list": 5,
-    "# for memory": 5
+    "# for memory": 5,
+    "ide-hotkey": 9,
+    "terminal-setup": 9,
+    "shift-enter": 9,
+    "install-github-app": 9,
+    "drag-and-drop-images": 9,
+    "paste-images-mac": 9,
+    "double-esc": 9,
+    "continue": 9
   },
   "userID": "480570d3bfc0cc6ea6e84c42c009a5418348653eb8950da258aa76084696a457",
   "firstStartTime": "2025-08-17T07:07:12.944Z",
@@ -169,6 +177,55 @@
       "projectOnboardingSeenCount": 0,
       "hasClaudeMdExternalIncludesApproved": false,
       "hasClaudeMdExternalIncludesWarningShown": false
+    },
+    "/Users/cheney/code/ukg/website": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "1",
+          "pastedContents": {}
+        },
+        {
+          "display": "can we do it tonight?",
+          "pastedContents": {}
+        },
+        {
+          "display": "yes",
+          "pastedContents": {}
+        },
+        {
+          "display": "I am good at the nextjs/react but *TIRED* to look into details. I wnat to see it ASAP. The assets will be just copy it live. I do't have it yet. I will test it manually. No performance constriennt, no need for CDN. you just use the best practice you are aware of for the architecture.",
+          "pastedContents": {}
+        },
+        {
+          "display": "yes",
+          "pastedContents": {}
+        },
+        {
+          "display": "I would expect index.html and a bunch of other files can be loaded locally / copied to s3/github and then it should work. Interaction wise, all menu/formanimation/responsive behavir needs be preserved. If it is too complex, then don't need to copy. Please use any tool you have to find out the current website.",
+          "pastedContents": {}
+        },
+        {
+          "display": "I would like to build a new version from the existing website and make it esier to maintain and redeploy. All the UI interactions needs be maintained, yet no need for backend function support. Ultimately this will be hosted, but I will require it debuggable locally. No necessary to make it an app, static visual clone would be enough. I want to host it staticlaly on s3/github webpage so as simple as possible. The whole website needs be cloned.",
+          "pastedContents": {}
+        },
+        {
+          "display": "/bmad-pilot create a clone of website https://mukr.iuk.kg/ and put it under web. the new website can be static website but must look exactly same as the website on browsers. If there are resources outside of the website (cdn resources) you also need to download as well. use zen when possible. ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/init ",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false
     }
   },
   "fallbackAvailableWarningThreshold": 0.5,
@@ -188,7 +245,7 @@
   "s1mAccessCache": {
     "617ba001-ac02-4bc1-a153-a9b2a11737b6": {
       "hasAccess": false,
-      "timestamp": 1755414904116
+      "timestamp": 1755424173104
     }
   },
   "isQualifiedForDataSharing": false,
@@ -238,9 +295,38 @@
       "command": "npx",
       "args": [
         "-y",
-        "@upstash/context7-mcp@latest"
+        "@upstash/context7-mcp"
       ],
       "env": {}
+    },
+    "mcp-deepwiki": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-deepwiki@latest"
+      ],
+      "env": {}
+    },
+    "Playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "env": {}
+    },
+    "exa": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server"
+      ],
+      "env": {
+        "EXA_API_KEY": "af0a8c74-fc13-48fd-a1a5-4c6854cc8e33"
+      }
     }
   },
   "recommendedSubscription": "",
